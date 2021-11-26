@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<style type="text/css">
+		html{background:rgba(0.8, 0.8, 0.8, 1.0);
+			background: radial-gradient(circle,lightSkyBlue,purple);}
+		body{font-family:sans-serif,cursive;font-size: 12pt;}
+		em{font-weight: bold;color:blue;text-decoration: underline;}
+		.ti{background-color: yellow;}
+		span{color: yellow;border: 2px solid green;}
+		.extra span{color: inherit;}
+		
+	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About me</title>
+	<title>My self info</title>
 </head>
 <body>
 	<form>
-	<table style="border:3px #cccccc solid;" cellpadding="10" border=‘1’>
+	<table style="border:3px  #cccccc solid" align="center" cellpadding="10" border=‘1’ ><div style="width:100 height:100">
 		<thead>
 			<tr>
-				<th colspan="3">About--110306058</th>
+				<th colspan="3"><div class="ti">About--110306058</div></th>
 			</tr>	
 		</thead>
 
 		<tbody>
 			<tr>
 				<td rowspan="3"><img src="ball.png" width="92" height="92" alt="personal photo"><br>personal photo</td>	
-				<td colspan="2"><label>Name:
+				<td colspan="2"><label><em>Name:</em>
 					<input name="name" type="text" size="25" maxlength="10"></label><br>
 				Gender:
 				<input type="radio" name="gender" value="male">Male
@@ -41,20 +52,20 @@
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2"><label>E-mail:<input name="e-mail" type="text" size="25" maxlength="50"></td>
+				<td colspan="2"><label><em>E-mail:</em><input name="e-mail" type="text" size="25" maxlength="50"></td>
 			</tr>
 			<tr>
-				<td>Hobby</td>
+				<td><span>Hobby</span></td>
 				<td colspan="2">
 					<input type="checkbox" value="swimming">Swimming
 					<input type="checkbox" value="volleyball">Volleyball
 					<input type="checkbox" value="movie">Movie
 					<input type="checkbox" value="game">Game
-					<input type="checkbox" value="sleep">sleep
+					<input type="checkbox" value="sleep">Sleep
 				</td>
 			</tr>
 			<tr>
-				<td>Skill</td>
+				<td><div class="extra" style="color:black;"><span>Skill</span></div></td>
 				<td colspan="2">
 					<input type="checkbox" value="java">Java
 					<input type="checkbox" value="html">HTML
@@ -64,15 +75,15 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Say Something</td>
+				<td><span>Say Something</span></td>
 				<td colspan="2">
-					<textarea rows="4" cols="50">
-Say something here.</textarea></td>
+					<textarea rows="4" cols="50" placeholder="Say something here."></textarea>
+					</td>
 			</tr>
 			<tr>
-				<td colspan="3">
-					<input type="submit">
-					<input type="reset">
+				<td colspan="3"><div align="center">
+					<input type="submit" >
+					<input type="reset" ></div>
 				</td>
 			</tr>		
 		</tbody>														
